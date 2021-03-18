@@ -1,0 +1,123 @@
+:root {
+    --darkCyan: hsl(185, 75%, 39%);
+    --darkBlue: hsl(229, 23%, 23%);
+    --grayishBlue: hsl(227, 10%, 46%);
+    --darkGray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    min-height: 100%;
+    background: var(--darkCyan);
+}
+
+.container  {
+    margin: 2em;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+}
+
+#top {
+    position: absolute;
+    bottom: 60%;
+    height: 200px;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 60%;
+    height: 200px;
+    right: 50%;
+}
+
+.main-card {
+    height: 445px;
+    width: 350px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-right-radius: 32%;
+    border-top-left-radius: 32%;
+    position: relative;
+    transform: translateY(20%);
+    background: white;
+}
+
+.card-svg {
+    width: 339px;
+    height: 140px;
+    background: url(../images/bg-pattern-card.svg) no-repeat;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    position: relative;
+    bottom: 1px;
+}
+
+.photo .image-holder {
+    width: 33%;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    bottom: 56px;
+    left: 32.5%;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+ .details .name {
+     position: absolute;
+     bottom: 201%;
+     right: 37%;
+     font-weight: 700;
+ }
+
+ .details .age {
+     position: absolute;
+     bottom: 201%;
+     left: 68%;
+     font-weight: lighter;
+     color: var(--grayishBlue);
+ }
+
+ .details .city {
+    position: relative;
+    font-weight: lighter;
+    bottom: 15px;
+    right: 5px;
+    color: var(--grayishBlue);
+}
+
+.profile-counts {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1.5em;
+}
+
+.profile-counts span {
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+#followers {
+    right: 10%;
+}
+
+#likes {
+    left: 20%;
+}
+
+#photos {
+    left: 5%;
+}
