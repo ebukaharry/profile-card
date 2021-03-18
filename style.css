@@ -24,7 +24,7 @@ body {
     font-size: 11px; 
     text-align: center; 
     position: relative;
-    top: 20em;
+    top: 29em;
 }
 
 .attribution a {
@@ -39,39 +39,53 @@ body {
     align-content: center;
 }
 
-#top {
+#top, #bottom {
     position: absolute;
+}
+
+#top {
     bottom: 46%;
     height: 51em;
     right: 50%;
 }
 
 #bottom {
-    position: absolute;
     top: 46%;
     height: 31em;
     left: 50%;
 }
 
+
+
 .main-card {
+    background: #fff;
     height: 390px;
-    width: 339px;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
     border-top-right-radius: 32%;
     border-top-left-radius: 32%;
+    transform: translateY(33%);
+    -moz-transform: translateY(33%);
+    -ms-transform: translateY(33%);
+    
+}
+
+.main-card, .card-svg {
+    width: 339px;
     position: relative;
-    transform: translateY(20%);
-    background: white;
+}
+
+.partition {
+    background-color: var(--darkGray);
+    height: 0.1px;
+    width: 339px;
 }
 
 .card-svg {
-    width: 339px;
     height: 140px;
     background: url(../images/bg-pattern-card.svg) no-repeat;
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
-    position: relative;
     bottom: 1px;
 }
 
@@ -93,28 +107,31 @@ body {
 }
 
  .details .name {
-     position: absolute;
-     bottom: 2.35em;
      right: 39%;
-     font-weight: 700;
-     font-size: 20px;
  }
 
  .details .age {
+     left: 64%;
+ }
+
+ .details .name,  .details .age {
      position: absolute;
      bottom: 2.35em;
-     left: 64%;
-     font-weight: lighter;
      font-size: 20px;
-     color: var(--grayishBlue);
  }
 
  .details .city {
     position: relative;
-    font-weight: lighter;
     bottom: 15px;
-    color: var(--darkGray);
     font-size: 16px;
+}
+
+.details .city, .details .age {
+    font-weight: 400;
+}
+
+.details .city, .details .age, .profile-counts span {
+    color: var(--grayishBlue);
 }
 
 .profile-counts {
@@ -127,7 +144,11 @@ body {
   position: relative;
   letter-spacing: 2px;
   font-size: 12px;
-  color: var(--grayishBlue);
+}
+
+.details .name, .profile-counts h3 {
+    color: var(--darkBlue);
+    font-weight: 700;
 }
 
 #followers {
