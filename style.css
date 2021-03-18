@@ -3,6 +3,7 @@
     --darkBlue: hsl(229, 23%, 23%);
     --grayishBlue: hsl(227, 10%, 46%);
     --darkGray: hsl(0, 0%, 59%);
+    --blue: hsl(228, 45%, 44%);
 }
 
 * {
@@ -11,14 +12,26 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
     min-height: 100%;
     background: var(--darkCyan);
+    overflow: hidden;
 }
 
-.container  {
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: relative;
+    top: 29em;
+}
+
+.attribution a {
+    color: var(--darkBlue); 
+}
+
+.container {
     margin: 2em;
     display: flex;
     position: relative;
@@ -28,20 +41,21 @@ body{
 
 #top {
     position: absolute;
-    bottom: 60%;
-    height: 200px;
+    bottom: 46%;
+    height: 51em;
+    right: 50%;
 }
 
 #bottom {
     position: absolute;
-    bottom: 60%;
-    height: 200px;
-    right: 50%;
+    top: 46%;
+    height: 31em;
+    left: 50%;
 }
 
 .main-card {
-    height: 445px;
-    width: 350px;
+    height: 390px;
+    width: 339px;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
     border-top-right-radius: 32%;
@@ -63,7 +77,7 @@ body{
 
 .photo .image-holder {
     width: 33%;
-    border: 8px solid #fff;
+    border: 6px solid #fff;
     border-radius: 50%;
     position: relative;
     bottom: 56px;
@@ -74,19 +88,24 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
+    margin-bottom: 20px;
+    top: 10px;
 }
+
  .details .name {
      position: absolute;
-     bottom: 201%;
-     right: 37%;
+     bottom: 2.35em;
+     right: 39%;
      font-weight: 700;
+     font-size: 20px;
  }
 
  .details .age {
      position: absolute;
-     bottom: 201%;
-     left: 68%;
+     bottom: 2.35em;
+     left: 64%;
      font-weight: lighter;
+     font-size: 20px;
      color: var(--grayishBlue);
  }
 
@@ -94,20 +113,21 @@ body{
     position: relative;
     font-weight: lighter;
     bottom: 15px;
-    right: 5px;
-    color: var(--grayishBlue);
+    color: var(--darkGray);
+    font-size: 16px;
 }
 
 .profile-counts {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 1.5em;
+    padding-top: 1.7em;
 }
 
 .profile-counts span {
   position: relative;
   letter-spacing: 2px;
   font-size: 12px;
+  color: var(--grayishBlue);
 }
 
 #followers {
@@ -115,9 +135,32 @@ body{
 }
 
 #likes {
-    left: 20%;
+    left: 17%;
 }
 
 #photos {
     left: 5%;
+}
+
+.likes {
+    position: relative;
+    right: 10px;
+}
+
+
+/* For desktops */
+@media screen and (min-width: 768px) {
+    #bottom {
+        position: absolute;
+        top: 50%;
+        height: 60em;
+        left: 45%;
+    }
+
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+        position: relative;
+        top: 20em;
+    }
 }
