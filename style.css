@@ -57,14 +57,14 @@ body {
 
 .main-card {
     background: #fff;
-    height: 390px;
+    height: 385px;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
     border-top-right-radius: 32%;
     border-top-left-radius: 32%;
-    transform: translateY(33%);
-    -moz-transform: translateY(33%);
-    -ms-transform: translateY(33%);
+    transform: translateY(35%);
+    -moz-transform: translateY(35%);
+    -ms-transform: translateY(35%);
     
 }
 
@@ -75,7 +75,7 @@ body {
 
 .partition {
     background-color: var(--darkGray);
-    height: 0.1px;
+    height:.5px;
     width: 339px;
 }
 
